@@ -1,7 +1,39 @@
 <label>
-  Name:
-  <input type="text" [formControl]="name">
+  Product ID: <input type="text" [formControl]="id">
 </label>
+<label>
+  Product Name:<input type="text" [formControl]="name">
+</label>
+<label>
+  Product Cost:
+  <input type="text" [formControl]="cost">
+</label>
+
+<label>Product Online</label>
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Yes</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">No</label><br>
+
+
+<label for="cars">Product Category</label>
+
+<select name="category" id="category">
+  <option value="grocerry">Grocerry</option>
+  <option value="mobile">Mobile</option>
+  <option value="electronics">Electronics</option>
+  <option value="clothes">Clothes</option>
+</select>
+
+<label>Available in Store</label>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Big Bazar</label>
+   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+   <label for="vehicle2"> DMart</label>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+   <label for="vehicle3"> Reliance</label>
+   <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+   <label for="vehicle3"> Mega Store</label>
 
 
 
@@ -11,5 +43,5 @@
 
 
 <p>
-  <button (click)="updateName()">Update Name</button>
+  <button (click)="updateName()">Add Product</button>
 </p>
